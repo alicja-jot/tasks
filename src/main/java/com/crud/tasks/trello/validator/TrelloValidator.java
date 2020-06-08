@@ -2,12 +2,14 @@ package com.crud.tasks.trello.validator;
 
 import com.crud.tasks.domain.TrelloBoard;
 import com.crud.tasks.domain.TrelloCard;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 import static org.hibernate.bytecode.BytecodeLogger.LOGGER;
 
+@Component
 public class TrelloValidator {
 
     private void validateCard(final TrelloCard trelloCard) {
